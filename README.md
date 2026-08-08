@@ -28,4 +28,4 @@ Proyecto educativo para aprender los fundamentos del desarrollo y la seguridad d
 
 ## Estado del proyecto
 
-🚧 En desarrollo — Paso 2: HTML
+🚧 Completado
