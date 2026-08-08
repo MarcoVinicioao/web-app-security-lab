@@ -17,9 +17,15 @@ def home():
 
 @app.route("/api/tasks", methods=["POST"])
 def create_task():
+
     data = request.get_json()
 
     task = data.get("task")
+
+    if not isinstance(task, str) or task.strip() == "":
+        return jsonify({
+            "error": "Task must be a non-empty string"
+        }), 400
 
     connection = get_connection()
 
